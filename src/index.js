@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const imageUrlInput = document.getElementById('image-url');
 
   let characters = [
-    { name: 'Cute Eating', votes: 0, image: 'assets/cute-eating.gif' },
-    { name: 'Another Character', votes: 0, image: 'assets/another-character.gif' },
-    { name: 'Funny Character', votes: 0, image: 'assets/funny-character.gif' },
+    { name: 'Rainbow', votes: 0, image: 'assets/rainbow.jpg' },
+    { name: 'Blue Sky', votes: 0, image: 'assets/bluesky.jpg' },
+    { name: 'Ruby', votes: 0, image: 'assets/ruby.jpg' },
+    { name: 'Sapphire', votes: 0, image: 'assets/saphire.jpg' },
+    { name: 'Topaz', votes: 0, image: 'assets/topaz.jpg' },
   ];
 
   let currentCharacterIndex = 0;
@@ -87,4 +89,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCharacterBar();
   showCharacterInfo(currentCharacterIndex);
 });
-
