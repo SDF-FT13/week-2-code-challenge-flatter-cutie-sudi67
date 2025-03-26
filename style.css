@@ -1,14 +1,14 @@
 :root {
-  --primary: #28a745;
-  --secondary: #007bff; /* Added secondary color for buttons */
-  --background: #f8f9fa;
-  --text: #343a40;
+  --primary: #fc823b;
+  --secondary: #6d19f3; /* Added secondary color for buttons */
+  --background: #7dd8fc; /* Changed background to white for better contrast */
+  --text: #aa26f7;
   --radius: 8px;
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif; /* Reverted font to Arial for consistency */
   background-color: var(--background);
   color: var(--text);
   display: flex;
@@ -71,7 +71,7 @@ form {
 }
 
 input, button {
-  padding: 10px; /* Added padding for better button appearance */
+  padding: 10px; /* Reverted padding to original for consistency */
   border: 1px solid #ced4da;
   border-radius: var(--radius);
   margin-top: 5px;
@@ -82,11 +82,12 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s; /* Added transition for button */
+  transition: background-color 0.3s; /* Reverted transition to original for consistency */
 }
 
 button:hover {
-  background-color: var(--secondary); /* Corrected hover color */
+  background-color: var(--secondary); /* Secondary button hover color */
+  transform: none; /* Reverted scale effect on hover for consistency */
 }
 
 @media (max-width: 500px) {
