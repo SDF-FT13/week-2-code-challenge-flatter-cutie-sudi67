@@ -1,6 +1,6 @@
 :root {
-  --primary: #ff5733; /* Updated primary color for a more vibrant look */
-  --secondary: #33c1ff; /* Updated secondary color for a cooler tone */
+  --primary: #ff6f61; /* Changed primary color for a softer appearance */
+  --secondary: #6a5acd; /* Changed secondary color for a more elegant touch */
   --background: #7dd8fc; /* Changed background to white for better contrast */
   --text: #aa26f7;
   --radius: 8px;
@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Arial', sans-serif; /* Reverted font to Arial for consistency */
-  background: linear-gradient(to right, var(--primary), var(--secondary)); /* Added gradient background */
+  background: linear-gradient(to right, var(--primary), var(--secondary), #f0e68c); /* Enhanced gradient background with a third color */
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -35,13 +35,13 @@ body {
 
 .character-item {
   padding: 15px;
-  border: 2px solid var(--secondary); /* Changed border color to secondary */
+  border: 2px solid var(--primary); /* Changed border color to primary for consistency */
   border-radius: var(--radius);
   background-color: #fff;
   box-shadow: var(--shadow);
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Enhanced transition for smoother effects */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Improved transition effects for background color */
 }
 
 .character-item:hover {
@@ -54,7 +54,7 @@ body {
   padding: 20px;
   border-radius: var(--radius);
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for greater depth */
   text-align: center;
   width: 100%;
   max-width: 400px;
