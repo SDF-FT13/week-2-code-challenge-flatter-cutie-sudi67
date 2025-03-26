@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="logo">
+    <div class="logo" title="Welcome to Gemstone Showdown!">
       <h1>Gemstone Showdown</h1>
     </div>
 
@@ -19,11 +19,11 @@
         <img
           id="image"
           src="assets/new-character.jpg"
-          alt="Character's Name"
+          alt="Image of Character's Name"
         /><!-- display character image here -->
         <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
         <form id="votes-form">
-          <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
+          <input type="text" placeholder="Enter Votes" id="votes" name="votes" aria-label="Enter your votes" />
           <input type="submit" value="Add Votes" />
         </form>
         <button id="reset-btn">Reset Votes</button>
@@ -33,11 +33,11 @@
       <form id="character-form">
         <div>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" aria-label="Character name" />
         </div>
         <div>
           <label for="image-url">Image URL</label>
-          <input type="text" id="image-url" name="image-url" />
+          <input type="text" id="image-url" name="image-url" aria-label="Image URL" />
         </div>
         <input type="submit" value="Add Character" />
       </form> 
